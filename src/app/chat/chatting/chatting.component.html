@@ -1,0 +1,11 @@
+<div>
+    <input [(ngModel)]="message.content" placeholder="Type a message..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+  
+  <div *ngFor="let msg of messages">
+    <p>{{ msg.content }} - {{ msg.sender }}</p>
+  </div>
+  <div ><button (click)="connect()">Connect</button>disconnect</div>
+  <div ><button (click)="disconnect()">disconnect</button>disconnect</div>
+  
